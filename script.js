@@ -198,6 +198,9 @@ myButton.onclick = function(){
 
 // if a condition is true , execute code
 // if not , do something else
+
+
+
 /*const myText = document.getElementById("myText");
 const mySubmit = document.getElementById("mySubmit");
 const resultElement = document.getElementById("resultElement");
@@ -229,6 +232,167 @@ mySubmit.onclick = function(){
     }
 }
 */
+
+// CHECKED = property that determines te checked state of an HTML Checkbox or radio button element
+
+/*const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("payPalBtn");
+
+const mySubmit = document.getElementById("mySubmit");
+
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
+
+    mySubmit.onclick = function(){
+    if(myCheckBox.checked){
+        subResult.textContent = `You are subscribed`;
+    }
+    else{
+        subResult.textContent = `You are NOT subscribed`;
+    }
+
+    if(visaBtn.checked){
+        paymentResult.textContent =`You are paying with VISA`;
+    }
+    else if(masterCardBtn.checked){
+        paymentResult.textContent = ` You are paying with MASTERCARD`;
+    }
+    else if(payPalBtn.checked){
+        paymentResult.textContent = `You are paying with PAYPAL`;
+    }
+    else{
+        paymentResult.textContent = ` YOu must select a payment type`;
+    }
+    }
+    */
+
+ // TERNARY OPERATOR
+    //    = a shortcut to if{} and else {} statements
+    //     helps to assign a variable based on a condititon
+    //     condition? codeIfTrue : codeIfFalse;
+
+    //let age = 21;
+    //let message = age >= 18 ? "You are an adult" : "You are an minor" ;
+    //console.log(message);
+
+    //let time = 16;
+    //let greeting = time < 12 ? "Good morning" : "Good afternoon";
+    //console.log(greeting);
+
+    //let purchaseAmount = 125;
+    //let discount = purchaseAmount >= 100 ? 10 : 0;
+    //console.log(`your total is ${purchaseAmount - purchaseAmount *(discount/100)}`);
+    
+    // SWITCH
+
+    /*let testScore = 85;
+    let letterGrade;
+
+    switch(true){
+        case testScore >= 90:
+            letterGrade = "A";
+            break;
+        case testScore >= 80:
+            letterGrade = "B";
+            break;
+    }
+
+
+    console.log(letterGrade);
+    */
+
+//  STRING SLICING = creating a substring from a portion of another string
+//                 string.slice(start,end)
+
+//const fullName = "Bro Code";
+
+//let firstName = fullName.slice(0,3);
+//let lastName = fullName.slice(4,8);
+
+//let firstChar = fullName.slice(0,1);
+//let lastChar = fullName.slice(-4);
+
+//let firstName = fullName.slice(0,fullName.indexOf(" "));
+//let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+
+ //console.log(firstName);
+ //console.log(lastName);
+
+/*
+const email = "Bro1@gmail.com";
+
+let userName = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@") + 1);
+
+console.log(userName);
+console.log(extension);
+*/
+
+//    METHOD CHAINING
+
+//    = calling one method after another in one continous line of code
+
+//let username = window.prompt("ENTER YOUR USERNAME ")
+// ---------NO METHOD CHAINING---------
+
+// --------- METHOD CHAINIG -----------
+
+//username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+//console.log(username);
+
+
+// LOGICAL OPERATORS
+
+// AND == &&
+// OR == ||
+// NOT == !
+
+/*const isSunny = true;
+
+if(!isSunny){
+    console.log("it is cloudy");
+}
+else{
+    console.log("it is sunny");
+}
+
+*/
+
+
+// assignment operator =
+// comparison operator == ( if values are equal)
+// strict equality operator === ( comapre if values and datatype are equal)
+// inequality operator !=
+// strict inequality operator !==
+
+/*
+const PI = "3.14";
+
+if(PI != "3.14"){
+    console.log("that is NOT PI");
+}
+else{
+    console.log("That is  PI");
+}
+    */
+
+//     WHILE LOOp = repeat some code WHILE some condition is true
+
+
+/*let username = "";
+
+while(username === "" || username == null){
+    username = window.prompt(`Enter your name`);
+}
+
+console.log(`Hello ${username}`);
+*/
+
+
+
 
 
 
